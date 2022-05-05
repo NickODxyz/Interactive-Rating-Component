@@ -22,27 +22,43 @@
             Frontend Mentor | Interactive rating component | NickOD.xyz
         </title>
     </head>
-    <body>
-        <div class="wrapper">
-            <div class="component set-flex">
-                <div class="top-star">
+    <body class="center">
+        <div class="wrapper set-flex center">
+            <!-- Initial active component -->
+            <div class="component set-flex flex-col active">
+                <div class="top-star set-flex center">
                     <img src="./images/icon-star.svg" alt="" />
                 </div>
-                <div class="heading"><h1>How did we do?</h1></div>
-                <div class="text">
-                    <p>
-                        Please let us know how we did with your support request.
-                        All feedback is appreciated to help us improve our
-                        offering!
-                    </p>
+                <h1 class="heading">How did we do?</h1>
+                <p class="text">
+                    Please let us know how we did with your support request. All
+                    feedback is appreciated to help us improve our offering!
+                </p>
+                <div class="ratings set-flex flex-row">
+                    <div class="rating-bubble">1</div>
+                    <div class="rating-bubble">2</div>
+                    <div class="rating-bubble">3</div>
+                    <div class="rating-bubble">4</div>
+                    <div class="rating-bubble">5</div>
                 </div>
-                <div class="ratings set-flex"></div>
-                <div class="rating-bubble"></div>
-                <div class="rating-bubble"></div>
-                <div class="rating-bubble"></div>
-                <div class="rating-bubble"></div>
-                <div class="rating-bubble"></div>
                 <div class="btn"><a href="#">submit</a></div>
+            </div>
+
+            <!-- Hidden component -->
+            <div class="component set-flex hidden">
+                <img
+                    src="./images/illustration-thank-you.svg"
+                    alt=""
+                    class="img"
+                />
+                <div class="selection">
+                    You selected <span>4</span> out of 5
+                </div>
+                <h2 class="thanks">Thank you!</h2>
+                <p class="thanks-text">
+                    We appriciate you taking the time to give a rating. If you
+                    need more support, don't hesitate to get in touch!
+                </p>
             </div>
         </div>
     </body>
